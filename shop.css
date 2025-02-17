@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white-clr: #fff;
+    --black-clr: #000;
+    --light-black: #333;
+    --primary-clr: #e6303d;
+    --secondary-clr: #eee;
+    --tag-clr: #7cc576;
+}
+
+.logo-container {
+    position: absolute;
+ }
+  
+ .products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    padding-top: 20px;
+}
+
+    
+    
+    .Our-pro {
+
+
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        /* width: 250px;
+        height: 350px; */
+        /* background-color: var(--secondary-clr);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform.3s ease-in-out; */
+        }
+        #shoe:hover,#coat:hover ,#bag:hover  {
+            transform:scale(1.06);
+           cursor: pointer; 
+           opacity: 80%;
+           transition:all 0.3s ease-in-out;}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.nav-icons {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+.navlist {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: var(--light-black);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navlist a:hover {
+    color: var(--primary-clr);
+}
+
+/* Icons */
+.nav-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.icon {
+    font-size: 20px;
+    color: var(--light-black);
+    transition: 0.3s;
+}
+
+.icon:hover {
+    color: var(--primary-clr);
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    background: var(--primary-clr);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.wishlist-btn:hover {
+    background: #c3222e;
+}
+
+/* Center Section */
+.centre {
+    padding-top: 100px; /* Adjust for navbar */
+    text-align: center;
+}
+
+.centre-image img {
+    width: 100%;
+    height: auto;
+}
+
+.centre-text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--black-clr);
+}
+
+.centre-text p {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#shop-now {
+    background-color: var(--primary-clr);
+    font-size: large;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#shop-now:hover {
+    opacity: 80%;
+}
+
+/* Product Categories */
+.for {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.kids {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.for div {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.for img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.for div:hover img {
+    transform: scale(1.06);
+    opacity: 80%;
+}
+
+.for h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.for h1:hover {
+    background-color: var(--primary-clr);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a1a40; /* Deep Purple */
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    width: 23%;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f4c542; /* Soft Gold */
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #d1d1e0; /* Light Grey */
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    color: #f4c542; /* Soft Gold on Hover */
+    text-decoration: underline;
+}
+
+/* Footer Logo */
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background-color: #0d0d30; /* Darker Royal Blue */
+    padding: 20px 0;
+    text-align: center;
+    color: #d1d1e0;
+    font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
